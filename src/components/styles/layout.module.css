@@ -1,0 +1,217 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+	height: 100%;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'aucznik_1303_plusregular';
+    src: url('/fonts/lucznik1303plus-webfont.woff2') format('woff2'),
+    url('/fonts/lucznik1303plus-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* layout styles */
+
+p {
+    font-family: 'aucznik_1303_plusregular';
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.container {
+	display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    font-family: 'aucznik_1303_plusregular';
+    font-size: 16px;
+    line-height: 22px;
+    color: #add8e6;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1039px ) {
+    .container {
+	    padding: 2.5rem 1rem;
+    }
+}
+
+.containerMain {
+	display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    max-width: 1240px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 40px 20px;
+}
+
+@media (max-width: 1260px ) {
+    .containerMain { 
+        width: auto;
+    }
+}
+
+.containerHeader {
+    background: lightblue;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+header .siteTitle {
+    font-family: 'aucznik_1303_plusregular';
+    font-size: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+header a.siteTitle:hover {
+    text-decoration: none;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header ul li {
+    margin-right: 1rem;
+}
+
+header ul li:last-child {
+    margin-right: 0;
+}
+
+header ul li a {
+    font-family: 'aucznik_1303_plusregular';
+    font-size: 18px;
+    color: #fff;
+}
+
+header ul li a:before,
+header ul li a:after {
+    display: inline-block;
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+header ul li a:before {
+    content: '{';
+    transform: translateX(20px);
+    margin-left: 10px;
+}
+
+header ul li a:after {
+    content: '}';
+    transform: translateX(-20px);
+    margin-right: 10px;
+}
+
+
+header ul li a:hover {
+    text-decoration: none;
+}
+
+header ul li a:hover::before {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+header ul li a:hover::after {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+@media (max-width: 639px) {
+    header {
+        flex-direction: column;
+    }
+
+    header ul {
+        flex-direction: column;
+        margin-top: 20px;
+        text-align: center; 
+    }
+    header ul li {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    header ul li:last-child {
+        margin-bottom: 0;
+    }
+}

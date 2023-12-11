@@ -1,0 +1,102 @@
+/* footer styles */
+
+.footer {
+    font-family: 'aucznik_1303_plusregular';
+    padding: 40px 0;
+    background: #eee;
+}
+
+.footer .footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer ul {
+    display: flex;
+}
+
+.footer ul li {
+    margin-right: 1rem;
+}
+
+.footer ul li:last-child {
+    margin-right: 0;
+}
+
+.footer ul li a {
+    color: #000;
+}
+
+.footer ul li a:hover {
+    text-decoration: none;
+}
+
+.footer ul.leftFooter {
+    display: block;
+}
+
+.footer ul.leftFooter li {
+    margin-bottom: 10px;
+}
+
+.footer ul.leftFooter li a:hover {
+    text-decoration: underline;
+}
+
+.footer ul.rightFooter li a:before,
+.footer ul.rightFooter li a:after {
+    display: inline-block;
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.footer ul.rightFooter li a:before {
+    content: '{';
+    transform: translateX(20px);
+    margin-left: 10px;
+}
+
+.footer ul.rightFooter li a:after {
+    content: '}';
+    transform: translateX(-20px);
+    margin-right: 10px;
+}
+
+.footer ul.rightFooter li a:hover::before {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.footer ul.rightFooter li a:hover::after {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+@media (max-width: 639px) {
+    .footer .footerContainer {
+        flex-direction: column;
+    }
+    .footer ul.leftFooter {
+        order: 2;
+    }
+    .footer ul.rightFooter {
+        margin-top: 0;
+    }
+    .footer ul  {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .footer ul li {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    .footer ul li:last-child {
+        margin-bottom: 0;
+    }
+}

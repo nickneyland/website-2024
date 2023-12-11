@@ -1,0 +1,42 @@
+/* Home page */
+
+#typedText {
+    padding: 40px 0;
+}
+
+@media (max-width: 1039px )  {
+    #typedtext {
+        padding: 20px 0;
+    }
+}
+
+h1 {
+    font-family: 'aucznik_1303_plusregular';
+    font-size: 35px;
+    color: #000;
+    margin-bottom: 15px;
+}
+	    
+@media (max-width: 1039px)  {
+    h1 {
+	    font-size: 45px;
+    }
+}
+
+@media (max-width: 639px)  {
+    h1 {
+        font-size: 30px;
+    }
+}
+	   
+h1 a {
+	color: lightblue;
+}
+
+.homeText {
+    font-size: 20px;
+}
+
+.homeText a {
+    font-size: 20px;
+}
