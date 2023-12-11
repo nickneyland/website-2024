@@ -167,11 +167,11 @@ const ListLink = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.create
 }, props.children);
 const homePage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
   id: _components_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_3__.typedText
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Hello."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Hello"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
   className: _components_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_3__.homeText
 }, "My name is Nick."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
   className: _components_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_3__.homeText
-}, "I am a web developer and former writer."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+}, "I am an IT professional and former writer."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
   className: _components_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_3__.homeText
 }, "You can see some of my ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(ListLink, {
   to: "/coding"
