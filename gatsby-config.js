@@ -17,6 +17,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'en'
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
         options: {
           icon: `src/images/favicon.png`
