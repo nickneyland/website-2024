@@ -43,7 +43,6 @@ export default ({ children }) => (
         <footer className={footer}>
             <div className={footerContainer}>
                 <ul className={leftFooter}>
-                    <li>Site built with <a href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">gatsby.js</a></li>
                     <li>&copy; {new Date().getFullYear()} Nick Neyland</li>
                 </ul>
                 <ul className={rightFooter}>

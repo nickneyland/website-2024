@@ -14,6 +14,7 @@ const codingPage = () => (
             <p>Select sites I have worked on include:</p>
 
             <ul>
+                <li><a href="https://www.bahamasgrid.net/" target="_blank" rel="noopener noreferrer">Bahamas Grid</a></li>
                 <li><a href="https://sustainability.southerncompanygas.com/">Southern - Sustainability</a></li>
                 <li><a href="https://digitalreport.southerncompanygas.com/">Southern - Digital Report</a></li>
                 <li><a href="https://pikerenewables.com/" target="_blank" rel="noopener noreferrer">Pike</a></li>

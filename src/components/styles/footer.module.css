@@ -40,10 +40,6 @@
     display: block;
 }
 
-.footer ul.leftFooter li {
-    margin-bottom: 10px;
-}
-
 .footer ul.leftFooter li a:hover {
     text-decoration: underline;
 }
